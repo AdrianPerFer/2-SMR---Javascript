@@ -1,1 +1,2 @@
-# 2-SMR---Javascript
+# 2ºSMR
+Exercise with Javascript by Adrián Perogil Fernández
