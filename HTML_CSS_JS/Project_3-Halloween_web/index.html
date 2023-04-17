@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Halloween Party</title>
+    <link rel="stylesheet" href="./style/halloween.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src="./javascript/halloween.js"></script>
+</head>
+<body onload="sonar('cancion');">
+
+    <audio id="grito1">
+        <source src="./sounds/Calabaza1.mp3" type="audio/mp3">
+    </audio> 
+
+    <audio id="grito2">
+        <source src="./sounds/Calabaza2.mp3" type="audio/mp3">
+    </audio> 
+
+    <audio id="grito3">
+        <source src="./sounds/Calazaba3.mp3" type="audio/mp3">
+    </audio> 
+
+    <audio id="gritofantasma">
+        <source src="./sounds/Fantasma1.mp3" type="audio/mp3">
+    </audio> 
+
+    <audio id="gritobruja">
+        <source src="./sounds/wlaugh.mp3" type="audio/mp3">
+    </audio> 
+
+    <audio id="cancion" controls>
+        <source src="./sounds/musica.mp3" type="audio/mp3">
+    </audio>
+
+    <div id="container">
+
+        <p id="p1"> Scary Halloween Party </p>
+        <p id="p2"> Neeever <br> touch <br> a <br> pumpkin!!!!!</p>
+        <p id="p3"> Can you feel it?</p>
+        <p id="p4"> A witch behind the moon !!</p>
+
+        <div id="Calabaza1" onclick="sonar('grito1')" ondblclick="pausar('grito1')">
+            <!-- Esto es para marcar la zona de la torre que se activa -->
+        </div>
+
+        <div id="Calabaza2" onclick="sonar('grito2')" ondblclick="pausar('grito2')">
+            <!-- Esto es para marcar la zona de la torre que se activa -->
+        </div>
+
+        <div id="Calabaza3" onclick="sonar('grito3')" ondblclick="pausar('grito3')">
+            <!-- Esto es para marcar la zona de la torre que se activa -->
+        </div>
+
+        <div id="lapida" onmouseover="mostrar('ghost');sonar('gritofantasma')" onmouseout="ocultar('ghost');pausar('gritofantasma')">
+            <!-- Esto es para marcar la zona de la torre que se activa -->
+        </div>
+
+        <div id="bruja" onmouseover="mostrar('bruja1');sonar('gritobruja')" onmouseout="ocultar('bruja1');pausar('gritobruja')">
+            <!-- Esto es para marcar la zona de la torre que se activa -->
+        </div>
+
+        <img id="bruja1" src="./images/Bruja.gif" alt="">
+        <img id="ghost" src="./images/gif4.gif" alt="">
+
+    </div>
+</body>
+</html>
